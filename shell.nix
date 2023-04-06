@@ -3,6 +3,8 @@
     my-python-packages = ps: with ps; [
       pandas
       requests
+      numpy
+      scipy
       # other python packages
     ];
   in
