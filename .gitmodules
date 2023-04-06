@@ -1,0 +1,3 @@
+[submodule "gp.fns"]
+	path = gp.fns
+	url = git@github.com:azencot/gp.fns.git
