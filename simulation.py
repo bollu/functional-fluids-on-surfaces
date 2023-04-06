@@ -1,6 +1,6 @@
 import polyscope as ps
 import numpy as np
-# from scipy.sparse import sparse
+# tufrom scipy.sparse import sparse
 import scipy.sparse.linalg as sla
 from scipy.sparse import coo_matrix
 from scipy.sparse import spdiags
@@ -39,7 +39,7 @@ class Mesh:
         NN2 = X[T[:, 0], :] - X[T[:, 2], :]
         self.NN = np.cross(NN1, NN2)
 
-        self.ta = normV(NN)/2;
+        self.ta = normV(NN)/2; # half the length of normals
         # self.N = NN./repmat(MESH.normv(NN),1,3);
         self.N = NN / np.tile(MESH.normv(NN), (1, 3))
 
